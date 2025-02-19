@@ -63,7 +63,7 @@
 
                     // Upload the file if valid
                     if (move_uploaded_file($_FILES["imageURL"]["tmp_name"][$key], $targetFile)) {
-                        $carouselLink= "http://localhost/crazzyoffer.in/admin/" . $targetFile;
+                        $carouselLink= "http://148.135.136.15/crazyadmin/admin/" . $targetFile;
                         $redirectLink= $_POST['redirectLink'][$key];
                     }
                     $q = "INSERT INTO best_of_brands_img (brand_id, heading, card_img, redirect, created_by, created_at) VALUES ('" . trim($_POST['brand']) . "', '" . trim($_POST['heading']) . "', '" . $carouselLink . "', '" . $redirectLink . "', '" . $_SESSION['ADMINUSERID'] . "', '" . date('Y-m-d H:i:s') . "')";
@@ -203,7 +203,7 @@
                                         <button type="submit" id="button-assign" name="button-assign" class="btn btn-sm btn-warning" data-original-title="Click Here to assigned Order">Filter Data</button>
                                     </td>
                                     <td>
-                                        <a href="http://localhost/crazzyoffer.in/admin/carzy-brands.php?add=true" rel="noopener noreferrer"><button type="button" id="button-export" class="btn btn-success btn-sm"></i>ADD BOB</button></a>
+                                        <a href="http://148.135.136.15/crazyadmin/admin/carzy-brands.php?add=true" rel="noopener noreferrer"><button type="button" id="button-export" class="btn btn-success btn-sm"></i>ADD BOB</button></a>
                                     </td>
                                 </tr>
                             </thead>
@@ -251,7 +251,7 @@
                                                             <a class="btn btn-sm btn-info"  href="manage-bob.php?bob_id=<?= base64_encode($data['id']) ?>" rel="noopener noreferrer"><i class="fa fa-eye"></i></a>
                                                         </td>
 
-                                                        <!-- <td class="text-center"><a class="btn btn-sm btn-warning" href="http://localhost/crazzyoffer.in/admin/carzy-brands.php?change=true&com=<?= $data['id'] ?>">Change</a></td> -->
+                                                        <!-- <td class="text-center"><a class="btn btn-sm btn-warning" href="http://148.135.136.15/crazyadmin/admin/carzy-brands.php?change=true&com=<?= $data['id'] ?>">Change</a></td> -->
                                                     </tr>
                                                 <?php
                                                 }

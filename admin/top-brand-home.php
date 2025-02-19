@@ -59,7 +59,7 @@
 
                 if ($uploadOk) {
                     if (move_uploaded_file($_FILES["newicon"]["tmp_name"], $targetFile)) {
-                        $filePath = "http://localhost/crazzyoffer.in/admin/" . $targetFile;
+                        $filePath = "http://148.135.136.15/crazyadmin/admin/" . $targetFile;
                     }
                 }
             }
@@ -140,7 +140,7 @@
 
                 if ($uploadOk) {
                     if (move_uploaded_file($_FILES["newicon"]["tmp_name"], $targetFile)) {
-                        $filePath = "http://localhost/crazzyoffer.in/admin/" . $targetFile;
+                        $filePath = "http://148.135.136.15/crazyadmin/admin/" . $targetFile;
                     }
                 }
             }
@@ -307,7 +307,7 @@
                                         <button type="submit" id="button-assign" name="button-assign" class="btn btn-sm btn-warning" data-original-title="Click Here to assigned Order">Filter Data</button>
                                     </td>
                                     <td>
-                                        <a href="http://localhost/crazzyoffer.in/admin/top-brand-home.php?add=true" rel="noopener noreferrer"><button type="button" id="button-export" class="btn btn-success btn-sm"></i>ADD Brand</button></a>
+                                        <a href="http://148.135.136.15/crazyadmin/admin/top-brand-home.php?add=true" rel="noopener noreferrer"><button type="button" id="button-export" class="btn btn-success btn-sm"></i>ADD Brand</button></a>
                                     </td>
                                 </tr>
                             </thead>
@@ -382,7 +382,7 @@
                                                         </td>
                                                         <td class="text-center"><?= ($data['description'] ? $data['description']  : 'NA') ?></td>
                                                         <td class="text-center"><?= $data['created_at'] ?></td>
-                                                        <td class="text-center"><a class="btn btn-sm btn-info" href="http://localhost/crazzyoffer.in/admin/top-brand-home.php?change=true&com=<?= $data['id'] ?>">Change</a></td>
+                                                        <td class="text-center"><a class="btn btn-sm btn-info" href="http://148.135.136.15/crazyadmin/admin/top-brand-home.php?change=true&com=<?= $data['id'] ?>">Change</a></td>
                                                     </tr>
                                                 <?php
                                                 }

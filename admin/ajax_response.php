@@ -52,7 +52,7 @@ switch ($location) {
                 $output= json_encode([
                     "error" => false,
                     "msg" => "File uploaded successfully!",
-                    "imagePath" => "http://localhost/crazzyoffer.in/admin".$targetFile,
+                    "imagePath" => "http://148.135.136.15/crazyadmin/admin".$targetFile,
                     "redirectLink" => $redirectLink
                 ]);
             } else {
